@@ -5,7 +5,11 @@
 # ... and performs it for us
 # Here we will place number 1 in r7 which tells the OS to exit/end the program
 # MOV Destination,Source : Move data from Source to Destination ... here our source is a constant so we use # and destination is register r0
+# SWI : SoftWare Interrupt ..... SWI 0 means an interrupt to make the OS perform the exit program task
 
 .global _start
 _start: 
   MOV R0,#30
+
+  MOV R7,#1
+  SWI 0
