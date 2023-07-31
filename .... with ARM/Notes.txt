@@ -1,0 +1,20 @@
+FreeCodeCamp Tutorial : 
+Using CPUlator emulator
+Registers - areas in memory closest to CPU - quickly accessible - with 8 positions each holding a hexadecimal value = 4 bits 
+=> total 32 bits or 4 bytes => 32 bit processor
+
+32 bits = A word
+
+In a 64 bit processor, a WORD = 64 bits of data
+
+Some registers are general-purpose while some have a specific purpose
+r0 - r6 are general purpose while r7 is used for system calls (comms given to OS)
+
+SP : Stack Pointer (rlated to Stack Memory in RAM, slower to access and write to, larger in size) tells us the address of the next available
+piece of memory on the stack
+
+LR : Link Register (stores the location to return back to when a function returns a value)
+
+PC : Program Counter (keeps track of the location of the next instruction to execute)
+
+CPSR : Stores info about our prog like : sets a flag when a result is negative
