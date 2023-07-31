@@ -18,3 +18,7 @@ LR : Link Register (stores the location to return back to when a function return
 PC : Program Counter (keeps track of the location of the next instruction to execute)
 
 CPSR : Stores info about our prog like : sets a flag when a result is negative
+
+2 Addressing methods that work with registers : 
+Immediate Addressing : Moving constants into registers
+Register Direct Addressing : Moving one register's data to another
