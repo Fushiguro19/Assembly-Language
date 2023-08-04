@@ -1,5 +1,5 @@
-# "=list" stores the location of the first valus of the list into R0
-#program to add numbers of a list
+; "=list" stores the location of the first valus of the list into R0
+;program to add numbers of a list
 
 
 .global _start
@@ -9,15 +9,15 @@
 _start:
   LDR R0,=list
   LDR R3, =endlist
-  LDR R1,[R0]            @stores the value at location R0 into R1
+  LDR R1,[R0]            ;stores the value at location R0 into R1
   ADD R2,R2,R1           
 
 loop:
-  LDR R1, [R0,#4]!      /*[R0,#4]! : First increment the location at R0 by 4(hex locations) and then load its value*/
+  LDR R1, [R0,#4]!      ;[R0,#4]! : First increment the location at R0 by 4(hex locations) and then load its value
   CMP R1,R3
-  BEQ exit              @If R1=R3 in the previous comparison then exit as we hv reached an empty slot = end of the list
-  ADD R2,R2,R1        @If they r not equal then keep adding 
-  BAL loop            @BAL : Branch ALways
+  BEQ exit              ;If R1=R3 in the previous comparison then exit as we hv reached an empty slot = end of the list
+  ADD R2,R2,R1        ;If they r not equal then keep adding 
+  BAL loop            ;BAL : Branch ALways
 
 exit:
 
