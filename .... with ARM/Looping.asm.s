@@ -3,9 +3,9 @@
 
 
 .global _start
-.equ endlist, 0xaaaaaaaa      /*.equ : directive to define constants ..... endlist : name of the constant 
-                              0xaaaaaaaa : All the empty slots r represented by 0xaaaaaaaa, so when the list ends, it reaches an empty slot 
-                              and thats what we r telling the system here*/
+.equ endlist, 0xaaaaaaaa      ;.equ : directive to define constants ..... endlist : name of the constant 
+                              ;0xaaaaaaaa : All the empty slots r represented by 0xaaaaaaaa, so when the list ends, it reaches an empty slot 
+                              ;and thats what we r telling the system here
 _start:
   LDR R0,=list
   LDR R3, =endlist
