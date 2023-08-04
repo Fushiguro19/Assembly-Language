@@ -7,6 +7,6 @@
 _stack:
   MOV R0, #5
   MOV R1, #7
-  ADD R2,R0,R1             //R2 = R0+R1
-  SUBS R3,R0,R1             //R3 = R1 - R0
-  MUL R4,R0,R1             // R4 = R0*R1
+  ADD R2,R0,R1             @ R2 = R0+R1
+  SUBS R3,R0,R1             @ R3 = R1 - R0
+  MUL R4,R0,R1             @ R4 = R0*R1
