@@ -1,6 +1,6 @@
-#Comparators : >,<,>= etc 
-#Branches : Move to diff locations/branches based on above results
-#There r many more commands for branching similar to BGT like BEQ for equal condition etc...
+;Comparators : >,<,>= etc 
+;Branches : Move to diff locations/branches based on above results
+;There r many more commands for branching similar to BGT like BEQ for equal condition etc...
 
 .global _start
 _start:
